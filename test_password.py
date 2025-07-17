@@ -1,4 +1,4 @@
-from main import generate_password
+from password import generate_password
 
 def test_default_length():
     pw = generate_password()
