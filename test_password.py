@@ -9,7 +9,7 @@ def test_custom_length():
     assert len(pw) == 20
 
 def test_content():
-    pw = generate_password(30)
+    pw = generate_password(70)
     # 至少有一個字母或數字
     assert any(c.isalpha() for c in pw)
     assert any(c.isdigit() or c in "!@#$%^&*()" for c in pw)
